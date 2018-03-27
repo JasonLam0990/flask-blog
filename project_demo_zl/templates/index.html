@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    首页
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+{% endblock %}
+
+{% block main %}
+    <ul class="release-list-group">
+        <li>
+            <div class="avatar-group">
+                <img src="{{ url_for('static',filename='images/logo.png') }}" alt="" class="avatar">
+            </div>
+            <div class="release-group">
+                <p class="release-title"><a href="">我是标题标题标题</a></p>
+                <p class="release-content">我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我
+                    是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内
+                    容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我
+                    是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</p>
+                <div class="release-info">
+                    <span class="release-author">林俊贤</span>
+                    <span class="release-time">2017-8-5</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="avatar-group">
+                <img src="{{ url_for('static',filename='images/logo.png') }}" alt="" class="avatar">
+            </div>
+            <div class="release-group">
+                <p class="release-title"><a href="">我是标题标题标题</a></p>
+                <p class="release-content">我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我
+                    是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内
+                    容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我
+                    是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</p>
+                <div class="release-info">
+                    <span class="release-author">林俊贤</span>
+                    <span class="release-time">2017-8-5</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+{% endblock %}
